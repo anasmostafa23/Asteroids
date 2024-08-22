@@ -1,4 +1,4 @@
-import pygame
+import pygame # type: ignore
 from constants import *
 from player import *
 pygame.init()
@@ -16,6 +16,7 @@ def main () :
                return
         
         screen.fill((0,0,0))
+        p.update(dt)
         p.draw(screen)
         pygame.display.flip()
         
