@@ -40,9 +40,9 @@ def main () :
 
         for objects in asteroids :
             for shot in shots : 
-                if shot.collision(objects) :
+                if objects.collision(shot) :
                     shot.kill()
-                    objects.kill()
+                    objects.split()
 
         screen.fill((0,0,0))
 
